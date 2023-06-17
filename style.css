@@ -27,16 +27,16 @@ body {
 
 table {
     border-collapse: collapse;
-    width: 450px;
-    height: 450px;
+    width: 344px;
+    height: 344px;
     margin: 0 auto;
     border: none;
     /* Äußere Umrandung entfernen */
 }
 
 td {
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     text-align: center;
     font-size: 48px;
     color: white;
@@ -78,4 +78,47 @@ table tr td:last-child {
     width: 100%;
     height: 5px;
     background-color: white;
+  }
+
+  #currentplayer{
+    min-width: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px;
+    margin-bottom: 32px;
+    /* border: 1px solid white; */
+  }
+
+  #game-over-screen{
+    min-width: 100%;
+    height: 100%;
+    z-index: 11;
+    background-color: #323232;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #game-over-screen p{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #player{
+    min-width: 250px;
+    height: 250px;
+  }
+
+  #playAgainBtn{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border: 4px double #323232;
+    border-radius: 10px;
+    cursor: pointer;
   }
